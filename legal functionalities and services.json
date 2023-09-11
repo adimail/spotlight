@@ -1,0 +1,334 @@
+{
+  "functionalities": [
+    {
+      "name": "Legal Assistance",
+      "description": "Provides legal assistance and advice on various legal matters in India.",
+      "keywords": ["legal advice India", "legal assistance India", "legal consultation India", "legal guidance India"],
+      "usage_examples": [
+        "What are my rights in a property dispute under Indian law?",
+        "How can I file for divorce in India?",
+        "Explain the legal procedures for obtaining a business license in India.",
+        "Can you clarify the Indian labor laws regarding workplace safety?"
+      ]
+    },
+    {
+      "name": "Case Research",
+      "description": "Performs research on legal cases in India and provides relevant information and precedents.",
+      "keywords": ["case research India", "legal precedents India", "case information India", "legal research India"],
+      "usage_examples": [
+        "Find landmark Supreme Court cases related to freedom of speech in India.",
+        "Retrieve appellate court decisions on property disputes in India.",
+        "Provide information on notable criminal law cases in Indian courts.",
+        "What are the key rulings in Indian contract law cases?"
+      ]
+    },
+    {
+      "name": "Legal Definitions",
+      "description": "Provides definitions and explanations of legal terms and concepts under Indian law.",
+      "keywords": ["legal definitions India", "legal terms India", "legal concepts India", "legal explanations India"],
+      "usage_examples": [
+        "What is the definition of 'jurisdiction' in Indian law?",
+        "Explain the concept of 'tort law' under Indian legal framework.",
+        "What does 'beyond a reasonable doubt' mean in Indian criminal law?",
+        "Can you clarify the principle of 'stare decisis' in the context of Indian jurisprudence?"
+      ]
+    },
+    {
+      "name": "Legal Procedures",
+      "description": "Guides users through legal procedures in India and explains the steps involved.",
+      "keywords": ["legal procedures India", "legal process India", "legal steps India", "legal guidance India"],
+      "usage_examples": [
+        "What is the process for filing a civil lawsuit in India?",
+        "Explain the steps in the property registration process in India.",
+        "How does the appeals process work in Indian courts?",
+        "What are the requirements for adopting a child in India?"
+      ]
+    },
+    {
+      "name": "Legal Resources",
+      "description": "Provides access to legal resources in India such as statutes, regulations, and court opinions.",
+      "keywords": ["legal resources India", "Indian statutes", "Indian regulations", "Indian court opinions"],
+      "usage_examples": [
+        "Find the Indian statutes related to consumer protection.",
+        "Provide the latest court opinions on labor disputes in India.",
+        "Where can I find the regulations related to environmental protection in India?",
+        "What are the legal resources for property law in Mumbai?"
+      ]
+    },
+    {
+      "name": "Legal Document Generation",
+      "description": "Automates the generation of legal documents based on user input in accordance with Indian laws.",
+      "keywords": ["legal document generation India", "automated document creation India", "document drafting India"],
+      "usage_examples": [
+        "Generate a partnership agreement document for a business venture in India.",
+        "Create a rental agreement for a residential property in India.",
+        "Draft a non-disclosure agreement for a business partnership in India.",
+        "Generate a power of attorney document for property transactions in India."
+      ]
+    },
+    {
+      "name": "Contract Review and Analysis",
+      "description": "Reviews and analyzes contracts to identify important clauses, potential risks, and conflicting terms under Indian law.",
+      "keywords": ["contract review India", "contract analysis India", "clause identification India", "risk assessment India"],
+      "usage_examples": [
+        "Review a commercial lease agreement and highlight any unfavorable terms under Indian law.",
+        "Analyze a software licensing agreement for potential legal risks in India.",
+        "Identify and explain the indemnification clause in an Indian construction contract.",
+        "Review a service agreement to identify any conflicting provisions under Indian legal standards."
+      ]
+    },
+    {
+      "name": "Legal Rights and Obligations",
+      "description": "Provides advice on legal rights and obligations in various contexts within the Indian legal system.",
+      "keywords": ["legal rights India", "legal obligations India", "rights and responsibilities India", "legal advice India"],
+      "usage_examples": [
+        "What are my rights as an employee under Indian labor laws?",
+        "What are the legal obligations of employers regarding workplace safety in India?",
+        "Explain the rights and responsibilities of landlords and tenants in India.",
+        "What are the legal rights of consumers when making online purchases in India?"
+      ]
+    },
+    {
+      "name": "Legal Process Guidance",
+      "description": "Guides users through the legal process in India, providing step-by-step instructions and clarifying requirements.",
+      "keywords": ["legal process guidance India", "step-by-step instructions India", "process clarification India", "legal assistance India"],
+      "usage_examples": [
+        "Guide me through the process of starting a business in India.",
+        "Explain the steps involved in obtaining a marriage certificate in India.",
+        "Clarify the requirements for changing my legal name in India.",
+        "Provide instructions on how to file a consumer complaint in India."
+      ]
+    },
+    {
+      "name": "Legal Research and Analysis",
+      "description": "Conducts in-depth research and analysis on complex legal issues in India, providing comprehensive information and insights.",
+      "keywords": ["legal research India", "legal analysis India", "legal insights India", "comprehensive information India"],
+      "usage_examples": [
+        "Conduct research on the legality of cryptocurrency in India.",
+        "Analyze the legal implications of artificial intelligence in Indian industries.",
+        "Provide comprehensive information on the legal requirements for starting an e-commerce business in India.",
+        "Research the legal standards for proving medical malpractice in Indian healthcare."
+      ]
+    },
+    {
+      "name": "Legal Representation",
+      "description": "Represents clients in legal proceedings in India and advocates for their interests in Indian courts.",
+      "keywords": ["legal representation India", "client advocacy India", "court representation India", "advocate India"],
+      "usage_examples": [
+        "Provide representation in a personal injury lawsuit in an Indian court.",
+        "Advocate for a client in a family court matter in India.",
+        "Represent a defendant in a criminal trial in India.",
+        "Provide legal counsel and representation in a business dispute under Indian law."
+      ]
+    },
+    {
+      "name": "Legal Opinion and Advice",
+      "description": "Offers legal opinions and advice based on analysis of legal issues and applicable laws in India.",
+      "keywords": ["legal opinions India", "legal advice India", "legal analysis India", "legal guidance India"],
+      "usage_examples": [
+        "Provide an opinion on the potential liability in a negligence case under Indian law.",
+        "Offer advice on the legal options for debt relief in India.",
+        "Assess the legality of a proposed business practice in India.",
+        "Provide guidance on the legal consequences of a contract breach in India."
+      ]
+    },
+    {
+      "name": "Alternative Dispute Resolution",
+      "description": "Assists in resolving legal disputes outside of traditional court proceedings in India.",
+      "keywords": ["alternative dispute resolution India", "mediation India", "arbitration India", "negotiation India"],
+      "usage_examples": [
+        "Mediate a family law dispute to reach a mutually agreeable solution in India.",
+        "Facilitate negotiations between parties in a contract dispute in India.",
+        "Provide arbitration services to resolve a commercial disagreement in India.",
+        "Assist in negotiating a settlement in a personal injury case under Indian law."
+      ]
+    },
+    {
+      "name": "Legal Ethics and Professional Responsibility",
+      "description": "Adheres to legal ethics and professional standards in all legal interactions in India.",
+      "keywords": ["legal ethics India", "professional responsibility India", "ethical standards India", "professional conduct India"],
+      "usage_examples": [
+        "Ensure confidentiality and attorney-client privilege in all legal communications in India.",
+        "Uphold the duty of loyalty and avoid conflicts of interest in India.",
+        "Maintain professionalism and integrity in legal proceedings in India.",
+        "Comply with ethical rules and regulations governing legal practice in India."
+      ]
+    },
+    {
+      "name": "Access to Justice",
+      "description": "Promotes access to justice and equal treatment under the law for all individuals in India.",
+      "keywords": ["access to justice India", "equal treatment India", "legal rights India", "fairness India"],
+      "usage_examples": [
+        "Advocate for the rights of marginalized communities in legal proceedings in India.",
+        "Provide legal assistance to individuals who cannot afford traditional legal representation in India.",
+        "Promote awareness of legal rights and resources available to underserved populations in India.",
+        "Support initiatives that improve access to justice and reduce barriers in the Indian legal system."
+      ]
+    },
+    {
+      "name": "Legal Due Diligence",
+      "description": "Conducts thorough legal due diligence to identify risks and legal implications in India.",
+      "keywords": ["due diligence India", "legal risks India", "legal implications India", "risk assessment India"],
+      "usage_examples": [
+        "Perform due diligence in a corporate merger to identify potential legal issues in India.",
+        "Conduct a legal review of contracts to assess compliance and mitigate risks in India.",
+        "Assist in due diligence for real estate transactions to uncover any legal encumbrances in India.",
+        "Evaluate the legal implications of a proposed business expansion in India."
+      ]
+    },
+    {
+      "name": "Legal Compliance",
+      "description": "Provides guidance on legal compliance and ensures adherence to applicable laws and regulations in India.",
+      "keywords": ["legal compliance India", "compliance guidance India", "regulatory compliance India", "law adherence India"],
+      "usage_examples": [
+        "Advise on compliance with data protection laws and regulations in India.",
+        "Ensure compliance with labor laws in employee management practices in India.",
+        "Guide businesses in adhering to environmental regulations in India.",
+        "Assist in compliance with financial and securities laws in investment activities in India."
+      ]
+    },
+    {
+      "name": "Legal Education and Training",
+      "description": "Offers legal education and training programs to enhance legal knowledge and skills in India.",
+      "keywords": ["legal education India", "legal training India", "professional development India", "legal knowledge India"],
+      "usage_examples": [
+        "Provide training on intellectual property rights and infringement issues in India.",
+        "Deliver workshops on contract law for business professionals in India.",
+        "Offer continuing legal education courses for practicing attorneys in India.",
+        "Conduct seminars on employment law rights and obligations in India."
+      ]
+    },
+    {
+      "name": "Legal Technology Solutions",
+      "description": "Utilizes technology solutions to streamline legal processes and improve efficiency in India.",
+      "keywords": ["legal technology India", "legal software India", "technology solutions India", "process automation India"],
+      "usage_examples": [
+        "Implement a case management software to organize and track case information in India.",
+        "Utilize e-discovery tools for efficient document review in litigation cases in India.",
+        "Integrate contract management software to streamline contract drafting and management in India.",
+        "Apply artificial intelligence solutions to analyze legal data and identify patterns in India."
+      ]
+    },
+    {
+      "name": "Legal Dispute Resolution",
+      "description": "Assists in resolving legal disputes through negotiation, mediation, or arbitration in India.",
+      "keywords": ["dispute resolution India", "conflict resolution India", "mediation India", "arbitration India"],
+      "usage_examples": [
+        "Facilitate negotiations between parties to reach a settlement in a contract dispute in India.",
+        "Mediate a family law case to help parties reach a mutually acceptable resolution in India.",
+        "Provide guidance on arbitration procedures and represent clients in arbitration hearings in India.",
+        "Assist in alternative dispute resolution methods to avoid lengthy litigation in India."
+      ]
+    },
+    {
+      "name": "Legal Ethics and Professional Responsibility",
+      "description": "Provides guidance on ethical obligations and professional conduct in the legal field in India.",
+      "keywords": ["legal ethics India", "professional responsibility India", "ethical obligations India", "professional conduct India"],
+      "usage_examples": [
+        "Advise attorneys on conflicts of interest and maintaining client confidentiality in India.",
+        "Provide guidance on the duty of competence and diligent representation in India.",
+        "Offer insights on the attorney-client privilege and its limitations in India.",
+        "Assist in navigating ethical dilemmas and making ethical decisions in India."
+      ]
+    },
+    {
+      "name": "Legal Risk Management",
+      "description": "Identifies and manages legal risks to minimize potential legal liabilities in India.",
+      "keywords": ["risk management India", "legal risk India", "liability management India", "risk mitigation India"],
+      "usage_examples": [
+        "Conduct risk assessments to identify potential legal vulnerabilities in a business operation in India.",
+        "Develop strategies to mitigate legal risks associated with new product launches in India.",
+        "Provide guidance on compliance with consumer protection laws to avoid legal disputes in India.",
+        "Assist in developing policies and procedures to minimize legal exposure in India."
+      ]
+    },
+    {
+      "name": "Legal Advocacy",
+      "description": "Advocates for clients' rights and interests in legal proceedings and negotiations in India.",
+      "keywords": ["legal advocacy India", "client representation India", "rights protection India", "advocacy skills India"],
+      "usage_examples": [
+        "Represent clients in court hearings and present their case before a judge in India.",
+        "Advocate for the best interests of children in child custody disputes in India.",
+        "Negotiate on behalf of clients to secure favorable settlements in personal injury cases in India.",
+        "Protect clients' rights and fight for justice in criminal defense matters in India."
+      ]
+    },
+    {
+      "name": "Legal Writing and Communication",
+      "description": "Delivers effective legal writing and communication for various purposes and audiences in India.",
+      "keywords": ["legal writing India", "legal communication India", "legal drafting India", "effective communication India"],
+      "usage_examples": [
+        "Draft clear and concise legal contracts that accurately reflect the parties' intentions in India.",
+        "Prepare persuasive legal briefs and memoranda to support legal arguments in India.",
+        "Communicate complex legal concepts in a clear and understandable manner to clients in India.",
+        "Craft compelling opening and closing statements for trial advocacy in India."
+      ]
+    },
+    {
+      "name": "Investigate Wrongdoing by Government Agencies",
+      "description": "This functionality evaluates people's stories and uncovers any potential wrongdoing by government agencies in India. It aims to identify instances of misconduct or unlawful actions in a user's case, particularly in relation to government actions. By examining the facts and applying relevant laws, it assists users in seeking justice and holding the responsible parties accountable.",
+      "keywords": ["government agency investigation India", "wrongdoing evaluation India", "unlawful actions India", "government accountability India"],
+      "usage_examples": [
+        "Evaluate my case and determine if a government agency has violated any laws or regulations in India.",
+        "Identify any instances of misconduct or wrongdoing by a government agency in my case in India.",
+        "Assist me in gathering evidence to support allegations of wrongdoing by a government agency in India.",
+        "Provide guidance on legal remedies available for addressing government agency misconduct in India."
+      ]
+    },
+    {
+      "name": "Legal Document Review and Clauses",
+      "description": "This functionality reviews legal documents, such as contracts, agreements, or legal forms, and provides a comprehensive analysis in India. It identifies unacceptable or missing clauses and suggests appropriate revisions or additions based on specific circumstances in India. By ensuring the accuracy and completeness of legal documents in India, it helps users avoid potential pitfalls and legal disputes.",
+      "keywords": ["document review India", "clause analysis India", "contract evaluation India", "legal form review India"],
+      "usage_examples": [
+        "Review my rental agreement and suggest any necessary changes or additions in India.",
+        "Identify missing clauses in my employment contract and provide suggestions in India.",
+        "Evaluate the legal terms in my business partnership agreement and suggest improvements in India.",
+        "Review my will and ensure all necessary clauses are included for proper estate planning in India."
+      ]
+    },
+    {
+      "name": "Legal Research and Decision Support",
+      "description": "This functionality leverages its understanding of legal context and extensive knowledge base to expedite legal research and decision-making in India. It can quickly retrieve relevant legal information, statutes, case precedents, and regulations in India, providing users with valuable insights and supporting them in making informed legal decisions. By streamlining the research process in India, it saves time and enhances efficiency.",
+      "keywords": ["legal research India", "decision support India", "legal information retrieval India", "case precedents India"],
+      "usage_examples": [
+        "Provide me with the latest case precedents on employment discrimination in New Delhi, India.",
+        "Research the relevant statutes and regulations regarding intellectual property rights in Mumbai, India.",
+        "Assist me in understanding the legal implications of a recent High Court ruling in India.",
+        "Help me analyze the potential legal risks and benefits of a business expansion in Bangalore, India."
+      ]
+    },
+    {
+      "name": "Integrated e-Signature and Document Workflow",
+      "description": "This functionality integrates with e-signature software to streamline document workflows in India. Users can create, gather information, review, and electronically sign documents all in one place in India, improving efficiency and reducing paperwork. By eliminating the need for physical signatures and manual document handling in India, it simplifies processes and enhances convenience for both individuals and organizations.",
+      "keywords": ["e-signature integration India", "document workflow India", "electronic document signing India", "paperless processes India"],
+      "usage_examples": [
+        "Create a new client contract, gather the necessary information, and obtain electronic signatures in India.",
+        "Streamline the approval process for legal documents by integrating with e-signature software in India.",
+        "Review and digitally sign legal forms and agreements without the need for printing and scanning in India.",
+        "Automate document routing and notifications to ensure smooth workflows and timely sign-offs in India."
+      ]
+    },
+    {
+      "name": "Language Processing and Grammar Check",
+      "description": "This functionality employs advanced language processing capabilities to ensure correct grammar and consistency in legal documents and communications in India. It automatically identifies and corrects grammar errors, suggests improvements for clarity and readability, and maintains consistency in style and terminology in India. By enhancing the quality of written materials in India, it helps convey legal information accurately and professionally.",
+      "keywords": ["language processing India", "grammar check India", "clarity improvement India", "consistency enforcement India"],
+      "usage_examples": [
+        "Proofread my legal brief and correct any grammar or spelling mistakes in India.",
+        "Suggest improvements to the clarity and readability of my legal memorandum in India.",
+        "Ensure consistency in terminology and writing style throughout my contract in India.",
+        "Review my client communication and suggest enhancements to convey legal concepts more effectively in India."
+      ]
+    },
+    {
+      "name": "Dynamic Clause Management",
+      "description": "This functionality automatically adds or removes specific clauses based on client information and context in India. It customizes legal documents to meet individual needs and requirements in India, eliminating the need for manual editing and customization. By dynamically adjusting clauses in India, it ensures that legal documents accurately reflect the unique circumstances of each user, saving time and reducing errors.",
+      "keywords": ["dynamic clause management India", "customized clauses India", "contextual adjustments India", "automated customization India"],
+      "usage_examples": [
+        "Generate a rental agreement with clauses tailored to the specific property and lease terms in India.",
+        "Create a sales contract with clauses that reflect the negotiated terms and conditions in India.",
+        "Automatically adjust clauses in a will based on the client's family situation and asset distribution preferences in India.",
+        "Customize employment agreements with clauses specific to each employee's role and responsibilities in India."
+      ]
+    }
+  ]
+}
