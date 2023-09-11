@@ -1,0 +1,109 @@
+"data_sources": {
+    "India": {
+      "Indian Parliament": {
+        "name": "Indian Parliament",
+        "url": "https://www.parliamentofindia.nic.in/"
+      },
+      "Indian Judiciary": {
+        "name": "Indian Judiciary",
+        "url": "https://www.indiancourts.nic.in/"
+      },
+      "Indian Laws": {
+        "name": "Indian Laws",
+        "url": "https://www.indiacode.nic.in/"
+      },
+      "Supreme Court of India": {
+        "name": "Supreme Court of India",
+        "url": "https://main.sci.gov.in/"
+      },
+      "High Courts in India": {
+        "name": "High Courts in India",
+        "url": "https://www.hcijudgments.nic.in/"
+      },
+      "National Legal Services Authority (NALSA)": {
+        "name": "NALSA",
+        "url": "http://nalsa.gov.in/"
+      },
+      "Indian Law Ministry": {
+        "name": "Indian Law Ministry",
+        "url": "https://www.molaw.gov.in/"
+      },
+      "Indian Bar Association": {
+        "name": "Indian Bar Association",
+        "url": "https://www.ibanet.org/"
+      },
+      "Indian Council of Legal Aid and Advice (ICLAA)": {
+        "name": "ICLAA",
+        "url": "http://www.iclaa.in/"
+      },
+      "National Human Rights Commission (NHRC)": {
+        "name": "NHRC",
+        "url": "https://nhrc.nic.in/"
+      },
+      "Legal Services India": {
+        "name": "Legal Services India",
+        "url": "http://www.legalservicesindia.com/"
+      },
+      "Indian Legal Information Institute (Indlii)": {
+        "name": "Indlii",
+        "url": "https://indlii.org/"
+      },
+      "Indian Law Review": {
+        "name": "Indian Law Review",
+        "url": "https://www.indianlawreview.com/"
+      },
+      "Indian Bar Council": {
+        "name": "Indian Bar Council",
+        "url": "http://www.barcouncilofindia.org/"
+      },
+      "Legal Service India": {
+        "name": "Legal Service India",
+        "url": "http://www.legalserviceindia.com/"
+      },
+      "Indian Kanoon": {
+        "name": "Indian Kanoon",
+        "url": "https://indiankanoon.org/"
+      },
+      "Indian Legal News": {
+        "name": "Indian Legal News",
+        "url": "https://www.indialegallive.com/"
+      },
+      "Indian Journal of Law and Public Policy": {
+        "name": "Indian Journal of Law and Public Policy",
+        "url": "https://www.ijlpp.com/"
+      },
+      "Indian National Bar Association": {
+        "name": "Indian National Bar Association",
+        "url": "https://www.indianbarassociation.org/"
+      },
+      "Indian Legal Resources": {
+        "name": "Indian Legal Resources",
+        "url": "https://indianlegalresource.com/"
+      },
+      "Legal Bites": {
+        "name": "Legal Bites",
+        "url": "https://www.legalbites.in/"
+      },
+      "Live Law": {
+        "name": "Live Law",
+        "url": "https://www.livelaw.in/"
+      },
+      "Bar and Bench": {
+        "name": "Bar and Bench",
+        "url": "https://www.barandbench.com/"
+      },
+      "Indian Journal of Constitutional and Administrative Law": {
+        "name": "Indian Journal of Constitutional and Administrative Law",
+        "url": "https://www.ijcal.in/"
+      },
+      "Indian Legal Forum": {
+        "name": "Indian Legal Forum",
+        "url": "https://www.indialegalforum.com/"
+      },
+      "Indian Journal of Law and Technology": {
+        "name": "Indian Journal of Law and Technology",
+        "url": "https://ijlt.in/"
+      }
+    }
+  }
+  
