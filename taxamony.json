@@ -1,0 +1,155 @@
+{
+    "LegalTopics": [
+      {
+        "Category": "Family Law",
+        "Subcategories": [
+          "Child Custody",
+          "Divorce",
+          "Adoption",
+          "Child Support",
+          "Alimony",
+          "Domestic Violence"
+        ]
+      },
+      {
+        "Category": "Property Law",
+        "Subcategories": [
+          {
+            "Subcategory": "Real Estate",
+            "Topics": [
+              "Buying Property",
+              "Selling Property",
+              "Property Disputes"
+            ]
+          },
+          {
+            "Subcategory": "Inheritance",
+            "Topics": [
+              "Wills and Probate",
+              "Estate Planning"
+            ]
+          },
+          {
+            "Subcategory": "Landlord-Tenant",
+            "Topics": [
+              "Rental Agreements",
+              "Evictions",
+              "Tenant Rights"
+            ]
+          }
+        ]
+      },
+      {
+        "Category": "Employment Law",
+        "Subcategories": [
+          "Employment Contracts",
+          "Workplace Discrimination",
+          "Wage and Hour Laws",
+          "Employee Rights",
+          "Termination and Severance"
+        ]
+      },
+      {
+        "Category": "Criminal Law",
+        "Subcategories": [
+          "Criminal Charges",
+          "Legal Procedures in Criminal Cases",
+          "Defense Strategies",
+          "Juvenile Offenses",
+          "Bail and Bond"
+        ]
+      },
+      {
+        "Category": "Business and Corporate Law",
+        "Subcategories": [
+          "Business Formation",
+          "Contracts and Agreements",
+          "Intellectual Property",
+          "Commercial Transactions",
+          "Regulatory Compliance"
+        ]
+      },
+      {
+        "Category": "Consumer Rights",
+        "Subcategories": [
+          "Product Liability",
+          "Consumer Contracts",
+          "Consumer Fraud",
+          "Consumer Protection Laws"
+        ]
+      },
+      {
+        "Category": "Immigration Law",
+        "Subcategories": [
+          "Visas and Immigration Status",
+          "Citizenship and Naturalization",
+          "Deportation and Removal"
+        ]
+      },
+      {
+        "Category": "Environmental Law",
+        "Subcategories": [
+          "Environmental Regulations",
+          "Pollution Control",
+          "Conservation Laws",
+          "Land Use and Zoning"
+        ]
+      },
+      {
+        "Category": "Healthcare and Medical Law",
+        "Subcategories": [
+          "Patient Rights",
+          "Medical Malpractice",
+          "Health Insurance",
+          "Healthcare Regulations"
+        ]
+      },
+      {
+        "Category": "Elder Law",
+        "Subcategories": [
+          "Elder Abuse",
+          "Estate Planning for Seniors",
+          "Guardianship and Conservatorship"
+        ]
+      },
+      {
+        "Category": "Bankruptcy and Debt",
+        "Subcategories": [
+          "Personal Bankruptcy",
+          "Debt Relief Options",
+          "Debt Collection Laws"
+        ]
+      },
+      {
+        "Category": "Education Law",
+        "Subcategories": [
+          "Student Rights",
+          "Education Discrimination",
+          "School Policies and Regulations"
+        ]
+      },
+      {
+        "Category": "Civil Rights",
+        "Subcategories": [
+          "Discrimination and Civil Liberties",
+          "Human Rights",
+          "Privacy Rights"
+        ]
+      },
+      {
+        "Category": "International Law",
+        "Subcategories": [
+          "International Trade",
+          "Humanitarian Law",
+          "Treaty Law"
+        ]
+      },
+      {
+        "Category": "Other Legal Topics",
+        "Subcategories": [
+          "Miscellaneous legal topics not covered in the above categories"
+        ]
+      }
+    ]
+  }
+  
