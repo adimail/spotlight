@@ -34,9 +34,9 @@ def export_text_to_txt(pdf_filename):
         print(f"An error occurred while writing to '{txt_filename}': {str(e)}")
 
 
-if __name__ == "__main__":
-    pdf_files_to_process = ['fundamental_rights.pdf', 'indian_constitution.pdf']
+# if __name__ == "__main__":
+#     pdf_files_to_process = ['fundamental_rights.pdf', 'indian_constitution.pdf']
 
-    for pdf_filename in pdf_files_to_process:
-        export_text_to_txt(pdf_filename)
-        print(f"Text extracted from '{pdf_filename}' and saved as '{pdf_filename}.txt' in the 'texts' folder.")
+#     for pdf_filename in pdf_files_to_process:
+#         export_text_to_txt(pdf_filename)
+#         print(f"Text extracted from '{pdf_filename}' and saved as '{pdf_filename}.txt' in the 'texts' folder.")
