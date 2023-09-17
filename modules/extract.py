@@ -2,6 +2,8 @@ import PyPDF2
 import os
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
+from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
+from langchain.vectorstores import FAISS
 
 
 def get_pdf_text(pdf_docs):
@@ -61,6 +63,14 @@ def export_text_to_txt(pdf_filename):
             txt_file.write(extract_text_from_pdf(pdf_filename))
     except Exception as e:
         print(f"An error occurred while writing to '{txt_filename}': {str(e)}")
+
+def get_vector_store(text_chunks):
+    # embeddings = OpenAIEmbeddings()
+    embeddings = HuggingFaceInstructEmbeddings(model_name = 'hkunlp/instructor-large')
+    vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
+    return vectorstore
+    
+
 
 
 # if __name__ == "__main__":

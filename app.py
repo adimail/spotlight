@@ -1,8 +1,6 @@
 import streamlit as st
 from modules import extract
 from dotenv import load_dotenv
-from PyPDF2 import PdfReader
-from langchain.text_splitter import CharacterTextSplitter
 
 
 def main():
@@ -22,9 +20,10 @@ def main():
 
                 #Get PDF chunks
                 text_chunks = extract.get_text_chunks(raw_text)
-                # st.write(text_chunks)
+                st.write(text_chunks)
 
                 #Create vector storage
+                vectorstore = extract.get_vector_store(text_chunks)
             
 
 if __name__ == "__main__":
