@@ -3,11 +3,9 @@ from modules import extract
 from dotenv import load_dotenv
 from htmltemplate import css, bot_template, user_template
 
-
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Chat with multiple PDFs",
-                       page_icon=":books:")
+    st.set_page_config(page_title="KYR")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
@@ -15,10 +13,10 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Chat with multiple PDFs :books:")
-    user_question = st.text_input("Ask a question about your documents:")
-    # if user_question:
-    #     handle_userinput(user_question)
+    st.header("welcome to the know your rights framework")
+    user_question = st.text_input("Ask a question about your uploaded documents:")
+    if user_question:
+        extract.handle_userinput(user_question)
 
     with st.sidebar:
         st.subheader("Your documents")
@@ -31,13 +29,14 @@ def main():
 
                 # get the text chunks
                 text_chunks = extract.get_text_chunks(raw_text)
+                st.write(text_chunks)
 
                 # create vector store
                 vectorstore = extract.get_vector_store(text_chunks)
 
                 # create conversation chain
-                st.session_state.conversation = extract.get_conversation_chain(
-                    vectorstore)
+                st.session_state.conversation = extract.get_conversation_chain(vectorstore)
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     main()
