@@ -1,6 +1,6 @@
 # spotlight
 
-# Language Model For Law - LLM
+# Language Law Model - LLM
 ## SIH Project 2023 - Team Spotlight
 
 The project address the challenge of providing accessible legal information and awareness to a large portion of India's population, particularly those lacking literacy or belonging to marginalized communities. It aims to achieve this by extracting text data from official Indian government legal documents, storing it in a vector database, and utilizing it to train a Large Language Model for Law (LLM). This LLM will serve as the foundation for a user-friendly chatbot designed to respond to legal-related queries and prompts. The project will rely on advanced Natural Language Processing (NLP) and Machine Learning (ML) techniques, as well as multilingual capabilities, to empower citizens with reliable and easily accessible legal information. Leveraging AI models like GPT-3.5 Turbo and Ada v2, along with Google Cloud Translation AI and Text-To-Speech (TTS) technology, this initiative aims to bridge the information gap for marginalized communities and individuals with low literacy levels in India.
