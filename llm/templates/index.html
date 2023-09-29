@@ -1,7 +1,10 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>{{ page_title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'llm/css/style.css' %}">
 </head>
 <body>
     <header>
@@ -17,14 +20,26 @@
         </nav>
     </header>
     
+    <button id="open-popup">language</button>
+    <div class="popup-container" id="popup-container">
+        <div class="popup" id="popup">
+            <!-- Content for the pop-up goes here -->
+            <p>Select your language</p>
+            <button id="close-popup">English</button>
+            <button id="close-popup">हिन्दी</button>
+            <button id="close-popup">मराठी</button>
+        </div>
+    </div>
+    
     <main>
         <!-- Page-specific content goes here -->
         {% block content %}{% endblock %}
     </main>
 
     <footer>
-        <!-- Common footer content -->
-        <p>&copy; 2023 My Website</p>
+        <p>&copy; 2023 spotlight</p>
     </footer>
+    
+    <script src="{% static 'llm/js/script.js' %}"></script>
 </body>
 </html>

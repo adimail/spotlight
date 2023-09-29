@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="pagecontainer">
+        <div class="page-container">
+            <!-- Your main content goes here -->
+            <p>Welcome to my website</p>
+            <button id="open-popup">Open Pop-up</button>
+        </div>
+    
+        <div class="popup-container" id="popup-container">
+            <div class="popup" id="popup">
+                <!-- Content for the pop-up goes here -->
+                <p>This is a pop-up window</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+
+        <main>
+            <!-- Page-specific content goes here -->
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <!-- Common footer content -->
+            <p>&copy; 2023 spotlight</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
