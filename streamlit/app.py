@@ -2,6 +2,7 @@ import streamlit as st
 from modules import extract
 from dotenv import load_dotenv
 from htmltemplate import css, bot_template, user_template
+import chainlit as cl
 
 def main():
     load_dotenv()
