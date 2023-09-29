@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation Example</title>
+</head>
+<body>
+    <select id="targetLanguage">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="mr">Marathi</option>
+        <option value="pa">Punjabi</option>
+        <option value="gu">Gujarati</option>
+        <option value="ta">Tamil</option>
+        <option value="te">Telugu</option>
+        <!-- Add more Indian local languages as options -->
+    </select>
+    <button onclick="translatePage()">Translate</button>
+
+    <div>
+        <h1>Welcome to our website</h1>
+        <p>This is some random content that you can translate into different languages.</p>
+        <ul>
+            <li>Translation is a powerful tool for breaking language barriers.</li>
+            <li>Select a language from the dropdown and click the "Translate" button.</li>
+            <li>The translated page will open in a new tab/window.</li>
+        </ul>
+    </div>
+
+    <script>
+        function translatePage() {
+            const targetLanguage = document.getElementById('targetLanguage').value;
+            const pageUrl = window.location.href;
+            const translatedUrl = `https://translate.google.com/translate?hl=${targetLanguage}&sl=en&tl=${targetLanguage}&u=${encodeURIComponent(pageUrl)}`;
+            window.open(translatedUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
