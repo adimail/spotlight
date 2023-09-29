@@ -10,24 +10,3 @@ The project address the challenge of providing accessible legal information and 
 How It Works:
 
 The project first reads the PDF documents and efficiently breaks down the text into manageable chunks. These text segments are then converted into vector representations using OpenAI embeddings, allowing for efficient data handling. When a user poses a legal query, the application utilizes semantic analysis to identify text chunks within the documents that are most relevant to the user's question. These contextually appropriate chunks are then fed into the Large Language Model for Law (LLM) to generate a comprehensive and accurate response.
-
-The application uses Streamlit to create the GUI and Langchain to deal with the LLM.
-
-
-## Installation
-
-To install the repository, please clone this repository and install the requirements:
-
-```
-pip install -r requirements.txt
-```
-
-You will also need to add your OpenAI API key to the `.env` file.
-
-## Usage
-
-To use the application, run the `main.py` file with the streamlit CLI (after having installed streamlit): 
-
-```
-streamlit run app.py
-```
