@@ -2,25 +2,20 @@ const openPopupButton = document.getElementById("open-popup");
 const popupContainer = document.getElementById("popup-container");
 const translateButton = document.getElementById("translate-button");
 
-// Add an event listener to the popup container to handle language button clicks
 popupContainer.addEventListener("click", (event) => {
     if (event.target.tagName === "BUTTON") {
         const selectedLanguage = event.target.textContent;
 
-        // Hide the popup container
         popupContainer.style.display = "none";
     }
 });
 
 openPopupButton.addEventListener("click", () => {
-    // const selectedLanguageElement = document.getElementById("selected-language");
-    // selectedLanguageElement.textContent = "English";
 
     popupContainer.style.display = "flex";
 });
 
 translateButton.addEventListener("click", () => {
-    // Hide the popup container before translating
     popupContainer.style.display = "none";
 
     translatePage();
@@ -30,7 +25,6 @@ function translatePage() {
     const targetLanguage = document.getElementById('targetLanguage').value;
     const contentToTranslate = document.body.innerHTML;
 
-    // Send a request to the Translation API to translate the content
     fetch(`https://translation.googleapis.com/language/translate/v2?key=AIzaSyBn8mHJUP1N38npOK2Yd4pIE0Pg2y21sU0`, {
         method: 'POST',
         body: JSON.stringify({
@@ -45,10 +39,43 @@ function translatePage() {
     .then(data => {
         const translatedText = data.data.translations[0].translatedText;
 
-        // Update the content of the current page with the translated content
         document.body.innerHTML = translatedText;
     })
     .catch(error => {
         console.error('Translation error:', error);
     });
 }
+
+
+navigator.mediaDevices.getUserMedia({ audio: true })
+  .then(function(stream) {
+    const mediaRecorder = new MediaRecorder(stream);
+    const chunks = [];
+
+    mediaRecorder.ondataavailable = function(event) {
+      if (event.data.size > 0) {
+        chunks.push(event.data);
+      }
+    };
+
+    document.getElementById('startRecording').addEventListener('click', function() {
+      mediaRecorder.start();
+      document.getElementById('startRecording').disabled = true;
+      document.getElementById('stopRecording').disabled = false;
+    });
+
+    document.getElementById('stopRecording').addEventListener('click', function() {
+      mediaRecorder.stop();
+      document.getElementById('startRecording').disabled = false;
+      document.getElementById('stopRecording').disabled = true;
+    });
+
+    mediaRecorder.onstop = function() {
+      const audioBlob = new Blob(chunks, { type: 'audio/wav' });
+      const audioUrl = URL.createObjectURL(audioBlob);
+      document.getElementById('audioPlayer').src = audioUrl;
+    };
+  })
+  .catch(function(error) {
+    console.error('Error accessing the microphone:', error);
+  });

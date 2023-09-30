@@ -8,24 +8,15 @@
 </head>
 <body>
     <header>
-        <!-- Common header content -->
         <h1>Law Language Model</h1>
         <h3>LLM</h3>
-        <nav>
-            <!-- Navigation menu -->
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
     <button id="open-popup">Select Language</button>
     
     <div class="popup-container" id="popup-container">
         <div class="popup" id="popup">
-            <!-- Content for the pop-up goes here -->
             <p>Select your language</p>
             <select id="targetLanguage">
                 <option value="en">English</option>
@@ -35,34 +26,113 @@
                 <option value="gu">Gujarati</option>
                 <option value="ta">Tamil</option>
                 <option value="te">Telugu</option>
-                <!-- Add more Indian local languages as options -->
             </select>
             <button id="translate-button">Translate</button>
         </div>
     </div>
-    
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/write">Write to AI</a></li>
+            <li><a href="/ask">Ask AI</a></li>
+            <li><a href="/docs">Scan Documents</a></li>
+        </ul>
+    </nav>
+
     <main>
         {% block content %}
+        <style>
+            .question-container {
+                background-color: #f9f9f9;
+                padding: 20px;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+    
+            .question-container h2 {
+                font-size: 24px;
+                color: #333;
+                margin-bottom: 15px;
+            }
+    
+            .columns {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .column {
+                width: 23%;
+                background-color: #c7c7c7;
+                border-radius: 15px;
+                padding: 20px;
+                margin: 10px;
+            }
+    
+            .question {
+                width: 40vw;
+                background-color: #fff;
+                padding: 20px;
+                margin-bottom: 10px;
+                border: 1.2px solid #494949;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+    
+            .explore-button {
+                display: block;
+                margin-top: 10px;
+                padding: 5px 10px;
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+        <section>
+            <h2>Few Examples to Ask</h2>
+            <div class="questions">
+                <div class="columns">
+                    <div class="question">What are my rights as a citizen?</div>
+                    <div class="question">How can I file a complaint?</div>
+                </div>
+                <div class="columns">
+                    <div class="question">How can I access legal aid services?</div>
+                    <div class="question">How can I obtain legal documents?</div>
+                </div>
+                <div class="columns">
+                    <div class="question">What are the legal implications of a particular action?</div>
+                    <div class="question">How do I change my name on Aadhar card?</div>
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <h2>Legal Topics</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3>Family Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="explore-button">Explore</button>
+                </div>
+                <div class="column">
+                    <h3>Property Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="explore-button">Explore</button>
+                </div>
+                <div class="column">
+                    <h3>Labor Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="explore-button">Explore</button>
+                </div>
+                <div class="column">
+                    <h3>Criminal Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <button class="explore-button">Explore</button>
+                </div>
+            </div>
+        </section>
         
-        <h2>This is home page content</h2>
-        <p>The International Covenant on Civil and Political Rights,1966 (ICCPR) broadly referred
-            to the inherent right to life and liberty and the right against arbitrary deprivation of those rights
-            and its various aspects (Articles 6 to 14); privacy, family, etc. (Article 17); freedom of
-            conscience and religion (Article 18); freedom of expression and information (Article 19); Right
-            of peaceful assembly (Article 21); freedom of association (Article 22); rights of minorities
-            (Article 27); etc. The International Covenant on Economic, Social and Cultural Rights, 1966
-            (ICESCR) broadly referred to the “right to work” and its various aspects (Articles 6 and 7); right
-            to form trade unions for promotion of economic or social interests and the right to strike (Article
-            8); right to social security and social insurance (Article 9); family, marriage, children and
-            mothers‟ rights (Article 10); adequate standard of living, right to food, clothing and housing,
-            freedom from hunger (Article 11); physical and mental health (Article 12); education (Article
-            13); compulsory primary education (Article 14) and culture (Article 15). The treaty obligations
-            under the covenant enjoined the State Parties to ensure these rights without discrimination and
-            “to take steps” to promote them “to the maximum of its available resources”, with a view to
-            achieving “progressively” the full realisation of these rights. The Directive Principles of State
-            Policy in Part IV of the Constitution are indeed the precursor to economic, social and cultural
-            rights specified in the ICESCR.</p>
-            
         {% endblock %}
     </main>
 
