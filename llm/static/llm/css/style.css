@@ -1,14 +1,18 @@
-/* Overall Page Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the container covers the viewport height */
+    min-height: 100vh;
 }
 
-/* Navbar Styles */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -18,7 +22,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 27px;
     font-size: 18px;
 }
 
@@ -29,28 +33,56 @@ nav a {
 }
 
 nav a:hover {
-    color: #000000; /* Change color on hover */
+    color: #000000;
 }
 
-/* Page Container Styles */
 .page-container {
     width: 100%;
     text-align: center;
 }
 
-p {
-    font-size: 24px;
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-/* Button Styles */
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header nav ul {
+    margin-top: 10px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100vw;
+    align-self: flex-end;
+}
+
 #open-popup, #close-popup {
     background-color: #3498db;
     color: white;
     padding: 10px 20px;
-    margin: 10px;
+    font-size: 20px;
+    margin: 20px 10px;
     border: none;
     cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
     display: flex;
     width: fit-content;
     align-self: center;
@@ -58,10 +90,9 @@ p {
 }
 
 #open-popup:hover, #close-popup:hover {
-    background-color: #2980b9; /* Darker color on hover */
+    background-color: #2980b9;
 }
 
-/* Popup Styles */
 .popup-container {
     display: none;
     position: fixed;
@@ -82,40 +113,181 @@ p {
     width: 40vw;
 }
 
-/* Header Styles */
-header {
-    background-color: #3498db;
-    color: white;
-    padding: 20px 0;
+#languageOptions button{
+    border: none;
+    background-color: #c7c7c7;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+#languageOptions button:active{
+    background-color: rgb(77, 217, 77);
+}
+
+.question-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    background-color: #c7c7c7;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.explore-button {
+    margin-top: auto; 
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: max-content;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.explore-button:hover{
+    background-color: #5dabff;
+}
+
+.question {
+    width: 40vw;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1.2px solid #494949;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.question:hover {
+    background-color: #d9d9d9;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    height: 50vh;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    width: 60vw;
+    padding: 5px;
+}
+
+#myInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#sendButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+}
+
+
+.plane-icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+#myInput:focus {
+    outline: none;
+    border: none;
+}
+
+.upload-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#fileUpload {
+    display: none;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.drag-and-drop {
+    display: flex;
+    border: 2px dashed #007BFF;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease-in-out;
+    margin: 20px;
     text-align: center;
 }
 
-header h1 {
-    font-size: 36px;
-    margin: 0;
+.drag-and-drop:hover {
+    background-color: #c4c4c4;
 }
 
-/* Style the navigation menu within the header */
-header nav ul {
+#fileList {
     margin-top: 10px;
 }
 
-/* Main Content Styles */
-main {
-    flex: 1;
+.image-style {
+    width: 90px; 
     padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
 }
 
-/* Footer Styles */
-footer {
-    /* display: fl; */
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    width: 100vw;
-    align-self: flex-end; /* Align the footer to the bottom */
-}
+

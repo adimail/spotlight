@@ -1,28 +1,20 @@
 const openPopupButton = document.getElementById("open-popup");
 const popupContainer = document.getElementById("popup-container");
-const translateButton = document.getElementById("translate-button");
+const languageOptions = document.getElementById("languageOptions");
 
-popupContainer.addEventListener("click", (event) => {
+let targetLanguage = "en";
+
+languageOptions.addEventListener("click", (event) => {
     if (event.target.tagName === "BUTTON") {
-        const selectedLanguage = event.target.textContent;
-
-        popupContainer.style.display = "none";
+        targetLanguage = event.target.value;
     }
 });
 
 openPopupButton.addEventListener("click", () => {
-
     popupContainer.style.display = "flex";
 });
 
-translateButton.addEventListener("click", () => {
-    popupContainer.style.display = "none";
-
-    translatePage();
-});
-
 function translatePage() {
-    const targetLanguage = document.getElementById('targetLanguage').value;
     const contentToTranslate = document.body.innerHTML;
 
     fetch(`https://translation.googleapis.com/language/translate/v2?key=AIzaSyBn8mHJUP1N38npOK2Yd4pIE0Pg2y21sU0`, {
@@ -38,13 +30,25 @@ function translatePage() {
     .then(response => response.json())
     .then(data => {
         const translatedText = data.data.translations[0].translatedText;
-
         document.body.innerHTML = translatedText;
     })
     .catch(error => {
         console.error('Translation error:', error);
     });
 }
+
+// Event listener for the translate button
+document.getElementById("translate-button").addEventListener("click", () => {
+    popupContainer.style.display = "none";
+    translatePage();
+});
+
+
+
+
+
+
+
 
 
 navigator.mediaDevices.getUserMedia({ audio: true })

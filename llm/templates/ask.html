@@ -1,7 +1,46 @@
 {% extends "index.html" %}
 {% load static %}
 {% block content %}
+<style>
+    .container {
+        text-align: center;
+        margin-top: 20px;
+        height: 40vh;
+    }
+
+    .record-button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    #startRecording {
+        background-color: #28a745; 
+    }
+
+    #stopRecording {
+        background-color: #dc3545; 
+    }
+</style>
+
+<div class="container">
     <h2>Ask AI</h2>
-    <button id="startRecording">Start Recording</button>
-    <button id="stopRecording" >Stop Recording</button>
+    <button id="startRecording" class="record-button">Start Recording</button>
+    <button id="stopRecording" class="record-button">Stop Recording</button>
+</div>
+
+<script>
+    document.getElementById("startRecording").addEventListener("click", function() {
+        // Add your start recording logic here
+    });
+
+    document.getElementById("stopRecording").addEventListener("click", function() {
+        // Add your stop recording logic here
+    });
+</script>
 {% endblock %}

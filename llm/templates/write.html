@@ -1,6 +1,16 @@
 {% extends "index.html" %}
-
+{% load static %}
 {% block content %}
+
+<div class="center-content">
     <h2>Write to AI</h2>
-    <input type="text" id="myInput" name="myInput" placeholder="Write to AI">
+    <form action="/your-post-endpoint" method="POST">
+        <div class="input-container">
+            <input type="text" id="myInput" name="myInput" placeholder="Write to AI">
+            <button type="submit" id="sendButton">
+                <i class="fa fa-paper-plane plane-icon"></i> Send
+            </button>
+        </div>
+    </form>
+</div>
 {% endblock %}

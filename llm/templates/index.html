@@ -7,10 +7,12 @@
     <link rel="stylesheet" type="text/css" href="{% static 'llm/css/style.css' %}">
 </head>
 <body>
-    <header>
-        <h1>Law Language Model</h1>
-        <h3>LLM</h3>
-        
+    <header style="display: flex; justify-content: center; align-items: center; font-family: Brush Script Std;">
+        <img src="{% static 'llm/logo.png' %}" alt="Logo" class="image-style">
+        <div>
+            <h1>Law Language Model</h1>
+            <h2 style="color: rgb(210, 210, 210);">LLM</h2>
+        </div>
     </header>
 
     <button id="open-popup">Select Language</button>
@@ -18,16 +20,17 @@
     <div class="popup-container" id="popup-container">
         <div class="popup" id="popup">
             <p>Select your language</p>
-            <select id="targetLanguage">
-                <option value="en">English</option>
-                <option value="hi">Hindi</option>
-                <option value="mr">Marathi</option>
-                <option value="pa">Punjabi</option>
-                <option value="gu">Gujarati</option>
-                <option value="ta">Tamil</option>
-                <option value="te">Telugu</option>
-            </select>
-            <button id="translate-button">Translate</button>
+            <div id="targetLanguage">
+                <div id="languageOptions">
+                    <button id="translate-button" value="en">English</button>
+                    <button id="translate-button" value="hi">Hindi</button>
+                    <button id="translate-button" value="mr">Marathi</button>
+                    <button id="translate-button" value="pa">Punjabi</button>
+                    <button id="translate-button" value="gu">Gujarati</button>
+                    <button id="translate-button" value="ta">Tamil</button>
+                    <button id="translate-button" value="te">Telugu</button>
+                </div>
+            </div>
         </div>
     </div>
     <nav>
@@ -41,98 +44,50 @@
 
     <main>
         {% block content %}
-        <style>
-            .question-container {
-                background-color: #f9f9f9;
-                padding: 20px;
-                border: 1px solid #000000;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-    
-            .question-container h2 {
-                font-size: 24px;
-                color: #333;
-                margin-bottom: 15px;
-            }
-    
-            .columns {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .column {
-                width: 23%;
-                background-color: #c7c7c7;
-                border-radius: 15px;
-                padding: 20px;
-                margin: 10px;
-            }
-    
-            .question {
-                width: 40vw;
-                background-color: #fff;
-                padding: 20px;
-                margin-bottom: 10px;
-                border: 1.2px solid #494949;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
-    
-            .explore-button {
-                display: block;
-                margin-top: 10px;
-                padding: 5px 10px;
-                background-color: #007BFF;
-                color: #fff;
-                border: none;
-                cursor: pointer;
-            }
-        </style>
         <section>
-            <h2>Few Examples to Ask</h2>
+            <h2 style="text-align: center;">Few Examples to Ask</h2>
             <div class="questions">
                 <div class="columns">
-                    <div class="question">What are my rights as a citizen?</div>
-                    <div class="question">How can I file a complaint?</div>
+                    <a href="/write"><div class="question">What are my rights as a citizen?</div></a>
+                    <a href="/write"><div class="question">How can I file a complaint?</div></a>
                 </div>
                 <div class="columns">
-                    <div class="question">How can I access legal aid services?</div>
-                    <div class="question">How can I obtain legal documents?</div>
+                    <a href="/write"><div class="question">How can I access legal aid services?</div></a>
+                    <a href="/write"><div class="question">How can I obtain legal documents?</div></a>
                 </div>
                 <div class="columns">
-                    <div class="question">What are the legal implications of a particular action?</div>
-                    <div class="question">How do I change my name on Aadhar card?</div>
+                    <a href="/write"><div class="question">What are the legal implications of a particular action?</div></a>
+                    <a href="/write"><div class="question">How do I change my name on Aadhar card?</div></a>
                 </div>
             </div>
         </section>
     
         <section>
-            <h2>Legal Topics</h2>
+            <h2 style="text-align: center;">Legal Topics</h2>
             <div class="columns">
                 <div class="column">
                     <h3>Family Law</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Family law in India governs legal matters related to marriage, divorce, child custody, adoption, and inheritance, often influenced by religious and cultural diversity.</p>
                     <button class="explore-button">Explore</button>
                 </div>
                 <div class="column">
                     <h3>Property Law</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Property law in India governs the rights and regulations related to the ownership, transfer, and use of real and personal property.</p>
                     <button class="explore-button">Explore</button>
                 </div>
                 <div class="column">
                     <h3>Labor Law</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Labor law in India governs employment relationships, addressing workers' rights, wages, working conditions, and industrial disputes through various legislations and regulations.</p>
                     <button class="explore-button">Explore</button>
                 </div>
                 <div class="column">
                     <h3>Criminal Law</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Criminal law in India encompasses offenses defined in the Indian Penal Code and other statutes, governing punishments for criminal acts.</p>
                     <button class="explore-button">Explore</button>
                 </div>
             </div>
         </section>
-        
+            
         {% endblock %}
     </main>
 

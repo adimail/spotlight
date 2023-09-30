@@ -1,13 +1,64 @@
 {% extends "index.html" %}
 
 {% block content %}
-    <h2>Upload your documents here</h2>
+<style>
+    
+</style>
 
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form }}
-        <label for="fileUpload">Select a file:</label>
-        <input type="file" id="fileUpload" name="fileUpload">
-        <input type="submit" value="Upload">
-    </form>
+<div class="center-content">
+    <h2>Upload Your Documents Here</h2>
+    <div class="upload-form">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <!-- Proper file input element -->
+            <input type="file" id="fileUpload" name="fileUpload" style="display: none;">
+            <label for="fileUpload" class="drag-and-drop" id="dragDropArea">
+                <span class="drag-and-drop-text">Drag & Drop files here or click to browse</span>
+            </label>
+            <ul id="fileList"></ul>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</div>
+
+<script>
+    const dragDropArea = document.getElementById('dragDropArea');
+    const fileList = document.getElementById('fileList');
+    const fileInput = document.getElementById('fileUpload');
+
+    dragDropArea.addEventListener('click', () => {
+        fileInput.click(); // Trigger the file input when the label is clicked
+    });
+
+    dragDropArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dragDropArea.classList.add('dragover');
+    });
+
+    dragDropArea.addEventListener('dragleave', () => {
+        dragDropArea.classList.remove('dragover');
+    });
+
+    dragDropArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dragDropArea.classList.remove('dragover');
+        const files = e.dataTransfer.files;
+        displayFiles(files);
+    });
+
+    fileInput.addEventListener('change', () => {
+        const files = fileInput.files;
+        displayFiles(files);
+    });
+
+    function displayFiles(files) {
+        fileList.innerHTML = '';
+        for (const file of files) {
+            const li = document.createElement('li');
+            li.textContent = file.name;
+            fileList.appendChild(li);
+        }
+    }
+</script>
+</div>
 {% endblock %}
