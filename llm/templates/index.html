@@ -9,7 +9,8 @@
 <body>
     <header>
         <!-- Common header content -->
-        <h1>Welcome to My Website</h1>
+        <h1>Law Language Model</h1>
+        <h3>LLM</h3>
         <nav>
             <!-- Navigation menu -->
             <ul>
@@ -19,21 +20,50 @@
             </ul>
         </nav>
     </header>
+
+    <button id="open-popup">Select Language</button>
     
-    <button id="open-popup">language</button>
     <div class="popup-container" id="popup-container">
         <div class="popup" id="popup">
             <!-- Content for the pop-up goes here -->
             <p>Select your language</p>
-            <button id="close-popup">English</button>
-            <button id="close-popup">हिन्दी</button>
-            <button id="close-popup">मराठी</button>
+            <select id="targetLanguage">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="mr">Marathi</option>
+                <option value="pa">Punjabi</option>
+                <option value="gu">Gujarati</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+                <!-- Add more Indian local languages as options -->
+            </select>
+            <button id="translate-button">Translate</button>
         </div>
     </div>
     
     <main>
-        <!-- Page-specific content goes here -->
-        {% block content %}{% endblock %}
+        {% block content %}
+        
+        <h2>This is home page content</h2>
+        <p>The International Covenant on Civil and Political Rights,1966 (ICCPR) broadly referred
+            to the inherent right to life and liberty and the right against arbitrary deprivation of those rights
+            and its various aspects (Articles 6 to 14); privacy, family, etc. (Article 17); freedom of
+            conscience and religion (Article 18); freedom of expression and information (Article 19); Right
+            of peaceful assembly (Article 21); freedom of association (Article 22); rights of minorities
+            (Article 27); etc. The International Covenant on Economic, Social and Cultural Rights, 1966
+            (ICESCR) broadly referred to the “right to work” and its various aspects (Articles 6 and 7); right
+            to form trade unions for promotion of economic or social interests and the right to strike (Article
+            8); right to social security and social insurance (Article 9); family, marriage, children and
+            mothers‟ rights (Article 10); adequate standard of living, right to food, clothing and housing,
+            freedom from hunger (Article 11); physical and mental health (Article 12); education (Article
+            13); compulsory primary education (Article 14) and culture (Article 15). The treaty obligations
+            under the covenant enjoined the State Parties to ensure these rights without discrimination and
+            “to take steps” to promote them “to the maximum of its available resources”, with a view to
+            achieving “progressively” the full realisation of these rights. The Directive Principles of State
+            Policy in Part IV of the Constitution are indeed the precursor to economic, social and cultural
+            rights specified in the ICESCR.</p>
+            
+        {% endblock %}
     </main>
 
     <footer>

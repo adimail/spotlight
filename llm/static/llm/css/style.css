@@ -1,16 +1,40 @@
-.pagecontainer {
+/* Overall Page Styles */
+body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container covers the viewport height */
 }
 
-.page-container {
-    width: 100%;
-    height: 100vh;
+/* Navbar Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+nav li {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #000000; /* Change color on hover */
+}
+
+/* Page Container Styles */
+.page-container {
+    width: 100%;
     text-align: center;
 }
 
@@ -18,15 +42,26 @@ p {
     font-size: 24px;
 }
 
-#open-popup {
+/* Button Styles */
+#open-popup, #close-popup {
     background-color: #3498db;
     color: white;
     padding: 10px 20px;
     margin: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    width: fit-content;
+    align-self: center;
+    flex-direction: row;
 }
 
+#open-popup:hover, #close-popup:hover {
+    background-color: #2980b9; /* Darker color on hover */
+}
+
+/* Popup Styles */
 .popup-container {
     display: none;
     position: fixed;
@@ -40,16 +75,47 @@ p {
 }
 
 .popup {
-    background-color: white;
+    background-color: rgb(185, 185, 185);
     padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 40vw;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Style the navigation menu within the header */
+header nav ul {
+    margin-top: 10px;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
 
-#close-popup {
-    background-color: #e74c3c;
+/* Footer Styles */
+footer {
+    /* display: fl; */
+    background-color: #333;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    width: 100vw;
+    align-self: flex-end; /* Align the footer to the bottom */
 }
