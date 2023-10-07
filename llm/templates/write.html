@@ -4,13 +4,21 @@
 
 <div class="center-content">
     <h2>Write to AI</h2>
-    <form action="/your-post-endpoint" method="POST">
+    <form action="/" method="POST">
         <div class="input-container">
             <input type="text" id="myInput" name="myInput" placeholder="Write to AI">
-            <button type="submit" id="sendButton">
-                <i class="fa fa-paper-plane plane-icon"></i> Send
-            </button>
+            <button type="submit" id="sendButton">Send</button>
         </div>
     </form>
+
+    {% if ai_response %}
+    <div class="answer-block bot">
+        <div class="avatar">
+            <img src="https://i.ibb.co/cN0nmSj/Screenshot-2023-05-28-at-02-37-21.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        </div>
+        <div class="message">{{ ai_response }}</div>
+    </div>
+    {% endif %}
+
 </div>
 {% endblock %}
